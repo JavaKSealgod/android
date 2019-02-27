@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>springboot demo</title>
+
+<link rel="stylesheet" type="text/css" th:href="@{/layui/css/layui.css}" />  
+
+<script type="text/javascript" th:src="@{/js/jquery-1.8.3.min.js}"></script> 
+<script type="text/javascript" th:src="@{/layui/layui.js}"></script>   
+<script type="text/javascript" th:src="@{/js/Page/index.js}"></script>  
+
+</head>
+<body>  
+	<h1>Wait Controller :<lable th:text="${Name}"/></h1> 
+	
+	<fieldset class="layui-elem-field site-demo-button" style="margin-top: 30px;">
+	  <legend>功能区域</legend>
+	  <div class="layui-form-item" >
+	    <label class="layui-form-label" style="width:200px; ">用户名称：</label>
+	    <div class="layui-input-inline">
+	      <input type="search" name="username" id="username"  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input" />
+	    </div>
+	  </div>
+	  <div> 
+	    <button class="layui-btn layui-btn-danger" id="WebService">Call WebService</button>  
+	    <button class="layui-btn" id="add">新增</button>
+	    <button class="layui-btn layui-btn-normal" id="butupdate">修改</button>
+	    <button class="layui-btn layui-btn-danger" id="butdelete">删除按钮</button>  
+	    <button class="layui-btn layui-btn-warm" id="butSearch">查询按钮</button>
+	  </div>
+	</fieldset>
+	
+	<div style="width: 99.8%" >
+	
+		<table id="listGrid" lay-filter="listGrid"></table>
+	
+	</div>
+</body>
+</html>

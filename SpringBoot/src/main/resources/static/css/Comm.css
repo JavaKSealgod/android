@@ -1,0 +1,15 @@
+@charset "UTF-8";
+ 
+table,table tr th, table tr td { 
+	border:1px solid #0094ff; 
+	text-align: center;
+	}
+table {
+	width: 100%; 
+	min-height: 25px; 
+	line-height: 25px;  
+	border-collapse: collapse;
+	}   
+table thead{
+	background-color: #D1E9E9;
+}
