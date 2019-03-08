@@ -7,5 +7,7 @@ import com.example.springboot.model.UserModel;
 public interface iUserService {
 	
 	public  List<UserModel> GetListUserModel(UserModel objUserModel);
+	
+	public int AddUserInfo(UserModel objUserModel);
 
 }

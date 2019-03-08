@@ -39,6 +39,8 @@ var Pagajax = {
 			  ActionURL = basePath+"/pages/list";
 		  else if(action=="WebService")
 			  ActionURL = basePath+"/pages/webservice";
+		  else if(action=="butAdddate")
+			  ActionURL = basePath+"/pages/addUser";
 		  return ActionURL;
   }
 }

@@ -91,6 +91,11 @@
 			<artifactId>spring-boot-starter-cache</artifactId>
 		</dependency>
 
+		<!-- 面向切面的注解依赖 -->
+		<dependency>
+		 <groupId>org.springframework.boot</groupId>
+		 <artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
 
 	</dependencies>
 

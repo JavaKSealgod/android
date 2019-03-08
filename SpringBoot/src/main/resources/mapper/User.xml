@@ -14,7 +14,16 @@
 		 </if>
 	</select> 
 	  
-	  
+	   <insert id="AddUserInfo" parameterType="com.example.springboot.model.UserModel" flushCache="true" > 
+		  
+		<selectKey keyProperty="USERID" order="BEFORE" resultType="String">
+		       select max(to_number(USERID))+1 from USERINFO
+		</selectKey>
+
+		INSERT INTO USERINFO(USERID,USERNAME,PWD) 
+		VALUES(#{USERID},#{USERNAME},'000000') 
+
+	 </insert>
 	  
 	 <delete id="DeleteUser" parameterType="com.example.springboot.model.UserModel" > 
           delete from USERINFO where USERNAME=#{USERNAME}

@@ -23,5 +23,6 @@ public interface UserDao {
 	@Autowired
 	public int updateUser(UserModel objUserModel);
 
-	
+	@Autowired
+	public int AddUserInfo(UserModel objUserModel);
 }

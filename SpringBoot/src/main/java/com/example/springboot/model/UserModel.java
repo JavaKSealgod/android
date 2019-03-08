@@ -2,7 +2,7 @@ package com.example.springboot.model;
 
 import java.io.Serializable;
 
-public class UserModel  implements Serializable {
+public class UserModel extends BaseModel  implements Serializable {
 	private String USERID;
 	private String USERNAME;
 	private String PWD;
