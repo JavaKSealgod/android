@@ -1,0 +1,39 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: first-cloud-server
+  profiles: Server1
+eureka:
+  instance:
+    hostname: Server1
+  client:
+#    register-with-eureka: false
+#    fetch-registry: false 
+#    8090 / 8091 互相注册为服务地址
+    serviceUrl:
+      defaultZone: http://Server2:8091/eureka/     
+#  关闭保护机制，并设置清理时间
+#  server:
+#    enable-self-preservation: false
+#    eviction-interval-timer-in-ms: 10000  
+---    
+server:
+  port: 8091
+spring:
+  application:
+    name: first-cloud-server
+  profiles:
+        Server2
+eureka:
+  instance:
+    hostname: Server2
+  client:
+#    register-with-eureka: false
+#    fetch-registry: false 
+    serviceUrl:
+      defaultZone: http://Server1:8090/eureka/
+#  关闭保护机制，并设置清理时间
+#  server:
+#    enable-self-preservation: false
+#    eviction-interval-timer-in-ms: 10000

@@ -1,0 +1,11 @@
+com\example\springboot\dao\UserDao.class
+com\example\springboot\webservice\CxfConfig.class
+com\example\springboot\Application.class
+com\example\springboot\webservice\demoWebserviceImpl.class
+com\example\springboot\Controller\ClientFactoryWebServiece.class
+com\example\springboot\Controller\indexController.class
+com\example\springboot\service\interfaces\iUserService.class
+com\example\springboot\model\UserModel.class
+com\example\springboot\Controller\loginController.class
+com\example\springboot\webservice\demoWebservice.class
+com\example\springboot\service\UserService.class

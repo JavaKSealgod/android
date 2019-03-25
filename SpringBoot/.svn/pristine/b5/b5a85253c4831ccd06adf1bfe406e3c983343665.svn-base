@@ -1,0 +1,78 @@
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background:#F0F0F0;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+}
+
+.banner {
+    height: 400px;
+    margin-top: 2px;
+    overflow: hidden;
+}
+.btn_left ,.btn_right{
+    display: inline-block;
+    width: 21px;
+    height: 150px; 
+    position: absolute;
+    left: -38px;
+    top: 90px;
+    opacity: 0;
+    transition: all ease 0.6s;
+    cursor: pointer;
+} 
+
+body{
+    padding:0;
+    margin: 0px;
+    background-color: #2c69c0;
+}
+
+.bg{
+    background-image: url(../image/login-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 900px;
+    margin: 0px auto;
+    height: 700px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.loginbox{
+    position: absolute;
+    right:15.5%;
+    top: 39.5%;width: 240px;
+}
+
+.loginbox input[type=text]{
+    border:1px solid #a9a8a7;
+    border-radius: 5px;
+    background-color: white;
+    line-height: 26px;
+    box-shadow: 0 0 2px #fff;
+    padding: 0 4px;
+    width: 160px;
+    color: #000060;
+}
+
+.loginbox label{
+    color: #000060;
+    text-shadow: 0 0 1px #fff;
+
+}
+
+.loginbox input.login{
+    border-top-color: #00006a;
+    border-bottom-color: #002caa;
+    border-left-color: #000979;
+    border-right-color: #000979;
+    background-color: #0650b8;
+    color: white;
+    padding: 4px 28px;
+    border-radius: 7px;
+    border-width: 1px;
+    background: linear-gradient(to bottom, #0664cc, #053ea7);
+    text-shadow: 1px 1px 1px #082279;
+}

@@ -1,0 +1,25 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: first-cloud-server
+  profiles: server1
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8091/eureka/
+---   
+server:
+  port: 8091
+spring:
+  application:
+    name: first-cloud-server
+  profiles: server2
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka/

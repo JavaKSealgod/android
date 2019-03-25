@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+  
+<mapper namespace="com.example.springboot.dao.UserDao" >  
+	
+	<select id="GetListUserModel" parameterType="com.example.springboot.model.UserModel" resultType="com.example.springboot.model.UserModel">
+		SELECT USERID,USERNAME,PWD
+		FROM USERINFO
+		WHERE 1=1
+		<if test='USERNAME != "%"' >
+		      AND USERNAME LIKE #{USERNAME}
+		 </if>
+	</select> 
+	  
+	 
+</mapper>
