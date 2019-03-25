@@ -1,0 +1,1 @@
+{"version":3,"file":"product_wg.js","sourceRoot":"","sources":["product_wg.ts"],"names":[],"mappings":";;;IAQA,MAAM,CAAC,GAAG,CAAC,IAAI,EAAE,CAAC;IAElB,IAAI,eAAe,GAAG,IAAI,aAAa,CAAC;QACvC,IAAI,EAAE,eAAe;QACrB,QAAQ,EAAE,eAAe;KACzB,CAAC,CAAC;IACH,IAAI,SAAS,EAAE,CAAC"}
