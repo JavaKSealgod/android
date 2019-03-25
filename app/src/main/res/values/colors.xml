@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#044391</color>
+    <color name="TextView">#2a5474</color>
+    <color name="TextViewF">#fff</color>
+    <color name="TextRed">#aa0003</color>
+    <color name="GridfontColor">#fff</color>
+    <color name="GridBackgroundColor">#73777f</color>
+</resources>

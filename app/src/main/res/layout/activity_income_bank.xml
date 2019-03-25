@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3560e1"
+    tools:context=".Income_bank">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button38"
+                    android:layout_width="183dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bank01" />
+
+                <Button
+                    android:id="@+id/button39"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bank02" />
+
+                <Button
+                    android:id="@+id/button40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bank03" />
+
+                <Button
+                    android:id="@+id/button41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bank04" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button42"
+                    android:layout_width="183dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bank05" />
+
+                <Button
+                    android:id="@+id/button43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bank06" />
+
+                <Button
+                    android:id="@+id/button44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bank07" />
+
+                <Button
+                    android:id="@+id/button45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bank08" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button46"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ButtonButtonButtonButtonButton" />
+
+                <Button
+                    android:id="@+id/button47"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ButtonButtonButtonButtonButton" />
+
+                <Button
+                    android:id="@+id/button48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ButtonButtonButtonButtonButton" />
+
+                <Button
+                    android:id="@+id/button49"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ButtonButtonButtonButtonButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fcfc00"
+            android:text="(工商银行，农业银行，建设银行，5-10分钟到账)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/close_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="close_bank"
+            android:layout_gravity="center"
+            android:background="@drawable/bank_close" />
+    </LinearLayout>
+
+</LinearLayout>

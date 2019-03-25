@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Account_record">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/record_bk"
+        android:orientation="vertical">
+        <!--Tab标签-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/butbet"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_tab_active_e375cd08c9"
+                android:textColor="@color/TextViewF"
+                android:text="下注记录" />
+
+            <Button
+                android:id="@+id/butrebate"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_tab_854f1dab96"
+                android:textColor="@color/TextViewF"
+                android:text="返水记录" />
+
+            <Button
+                android:id="@+id/butdeposit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_tab_854f1dab96"
+                android:textColor="@color/TextViewF"
+                android:text="存取款记录" />
+
+            <Button
+                android:id="@+id/butrecordPromotion"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_tab_854f1dab96"
+                android:textColor="@color/TextViewF"
+                android:text="我的存款优惠" />
+
+            <Button
+                android:id="@+id/butrecordBets"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_tab_854f1dab96"
+                android:textColor="@color/TextViewF"
+                android:text="时时反水" />
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="45dp"
+                android:layout_height="46dp"
+                android:layout_gravity="right"
+                android:background="@drawable/btn_backmain"
+                />
+            <!--android:onClick="back_site" -->
+
+        </LinearLayout>
+        <!--功能按钮-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textStartDt"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="下注日期 " />
+
+                <TextView
+                    android:id="@+id/date_in"
+                    android:layout_height="wrap_content"
+                    android:layout_width="60dp"
+                    android:background="@color/TextView"
+                    android:textColor="@color/TextViewF"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/date"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/btn_date_062f1a4112"/>
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="結束日期" />
+
+                <TextView
+                    android:id="@+id/date_in2"
+                    android:layout_width="60dp"
+                    android:background="@color/TextView"
+                    android:textColor="@color/TextViewF"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/date2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/btn_date_062f1a4112"/>
+
+                <Button
+                    android:id="@+id/butSearch"
+                    android:layout_width="3dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_yellow_f217c68425"
+                    android:textColor="@color/GridfontColor"
+                    android:text="查询" />
+            </LinearLayout>
+
+            <!--LinBet-->
+            <LinearLayout
+                android:id="@+id/LinBet"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtGameType"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="游戏类型" />
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/GameTypeSpinner"
+                    android:layout_width="60dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/common_spinner"
+                    android:entries="@array/GameType">
+                </android.support.v7.widget.AppCompatSpinner>
+                <!--android:theme="@style/common_spinner"-->
+                <!--没有作用，只是用来占位置的-->
+                <TextView
+                    android:id="@+id/txthidControle1"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtGamePC"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="派彩状况" />
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/GamePCSpinner"
+                    android:layout_width="60dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/PCText">
+                </android.support.v7.widget.AppCompatSpinner>
+
+                <!--没有作用，只是用来占位置的-->
+                <TextView
+                    android:id="@+id/txthidControle2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+            <!--Lindeposit-->
+            <LinearLayout
+                android:id="@+id/Lindeposit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtdepositmode"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="交易方式" />
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/depositmodeSpinner"
+                    android:layout_width="60dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/depositmode">
+                </android.support.v7.widget.AppCompatSpinner>
+
+                <TextView
+                    android:id="@+id/txtdepositType"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="交易类型" />
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/depositTypeSpinner"
+                    android:layout_width="60dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/depositType">
+                </android.support.v7.widget.AppCompatSpinner>
+
+                <TextView
+                    android:id="@+id/txtGameState"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="交易状态" />
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/depositStateSpinner"
+                    android:layout_width="60dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/depositState">
+                </android.support.v7.widget.AppCompatSpinner>
+
+            </LinearLayout>
+            <!--时时反水-->
+            <LinearLayout
+                android:id="@+id/Linqryrebate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/butqryrebateSearch"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/btn_yellow_f217c68425"
+                        android:textColor="@color/GridfontColor"
+                        android:text="查询" />
+                    <Button
+                        android:id="@+id/butqryrebateSubmit"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/btn_yellow_f217c68425"
+                        android:textColor="@color/GridfontColor"
+                        android:text="提交" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txtqryrebate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:text="今日共可反水次数 : " />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Grid 表头-->
+        <LinearLayout
+                android:id="@+id/headLayOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+        <!--Grid Items-->
+        <LinearLayout
+            android:id="@+id/fragmentLine"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="8"
+            android:orientation="vertical">
+            <!--grid fragment android:scrollbars="vertical"-->
+            <!--<fragment -->
+                <!--android:id="@+id/fragment_bet"-->
+                <!--android:name="com.example.yu810.new_project.Account_bet_Fragment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:layout_marginBottom="40dp" />-->
+
+             <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="40dp"
+                 />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

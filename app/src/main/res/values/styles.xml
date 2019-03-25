@@ -1,0 +1,194 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 全屏 -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppDate" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- 設置dialog 不用全頻 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="common_spinner" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textColor">@color/TextViewF</item>
+        <item name="android:background">@color/TextView</item>
+    </style>
+
+    <!--交易方式-->
+    <string-array name="depositmode">
+        <item name="0">全部</item>
+        <item name="XS">线上</item>
+        <item name="XX">线下</item>
+    </string-array>
+    <string-array name="depositmodevalue">
+        <item name="0">0</item>
+        <item name="XS">XS</item>
+        <item name="XX">XX</item>
+    </string-array>
+    <!--交易类型-->
+    <string-array name="depositType">
+        <item name="0">全部</item>
+        <item name="1">存款</item>
+        <item name="2">取款</item>
+        <item name="3">奖金</item>
+        <item name="4">调整</item>
+        <item name="8">活动--多倍打码</item>
+    </string-array>
+    <string-array name="depositTypeValue">
+        <item name="0">0</item>
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">3</item>
+        <item name="4">4</item>
+        <item name="8">8</item>
+    </string-array>
+    <!--交易状态-->
+    <string-array name="depositState">
+        <item name="0">全部</item>
+        <item name="1">交易终止</item>
+        <item name="2">交易处理中</item>
+        <item name="4">交易成功</item>
+        <item name="5">已受理</item>
+    </string-array>
+    <string-array name="depositStateValue">
+        <item name="0">0</item>
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+    </string-array>
+
+
+    <string-array name="PCText">
+        <item name="2">全部</item>
+        <item name="1">已派彩</item>
+    </string-array>
+    <string-array name="PCvalue">
+        <item name="2">2</item>
+        <item name="1">1</item>
+    </string-array>
+
+
+    <string-array name="GameType">
+        <item name="">全部</item>
+        <item name="8827">BG娱乐城</item>
+        <item name="9454">皇家真人</item>
+        <item name="9688">神州棋牌</item>
+        <item name="9692">BF彩票</item>
+        <item name="779">幸运彩票</item>
+        <item name="3251">新MG娱乐城</item>
+        <item name="3373">CQ game</item>
+        <item name="3401">JDB168</item>
+        <item name="7847">GM棋牌</item>
+        <item name="2048">GT娱乐城</item>
+        <item name="2907">OG娱乐城</item>
+        <item name="3254">PT娱乐城</item>
+        <item name="5814">美天棋牌</item>
+        <item name="9690">熊猫棋牌</item>
+        <item name="3344">SG娱乐城</item>
+        <item name="4944">KY棋牌</item>
+        <item name="3091">AB娱乐城</item>
+        <item name="8056">WM娱乐城</item>
+        <item name="3087">AG娱乐城</item>
+        <item name="3284">FULI娱乐城</item>
+        <item name="3388">GNS娱乐城</item>
+        <item name="3811">MG＋</item>
+        <item name="3888">捕鱼传奇</item>
+        <item name="6398">IBO娱乐城</item>
+        <item name="7560">GTI娱乐城</item>
+        <item name="8841">RT娱乐城</item>
+        <item name="8900">PG娱乐城</item>
+        <item name="9045">UPBET体育</item>
+        <item name="35">体育竞猜</item>
+        <item name="4390">FG娱乐城</item>
+        <item name="6482">SKYWIND娱乐城</item>
+        <item name="5064">AGI电子</item>
+        <item name="5687">VG棋牌</item>
+        <item name="5810">BNG娱乐城</item>
+        <item name="6108">玛雅娱乐城</item>
+        <item name="2160">AWG娱乐城</item>
+        <item name="6633">TOG娱乐城</item>
+        <item name="8119">LEG棋牌</item>
+        <item name="6342">GT棋牌</item>
+        <item name="3397">沙巴体育</item>
+        <item name="4930">VR 彩票</item>
+        <item name="5505">DT娱乐城</item>
+        <item name="8402">DS娱乐城</item>
+        <item name="64">BB娱乐城</item>
+        <item name="3624">GD娱乐城</item>
+    </string-array>
+    <string-array name="GameTypeValue">
+        <item name=""></item>
+        <item name="8827">8827</item>
+        <item name="9454">9454</item>
+        <item name="9688">9688</item>
+        <item name="9692">9692</item>
+        <item name="779">779</item>
+        <item name="3251">3251</item>
+        <item name="3373">3373</item>
+        <item name="3401">3401</item>
+        <item name="7847">7847</item>
+        <item name="2048">2048</item>
+        <item name="2907">2907</item>
+        <item name="3254">3254</item>
+        <item name="5814">5814</item>
+        <item name="9690">9690</item>
+        <item name="3344">3344</item>
+        <item name="4944">4944</item>
+        <item name="3091">3091</item>
+        <item name="8056">8056</item>
+        <item name="3087">3087</item>
+        <item name="3284">3284</item>
+        <item name="3388">3388</item>
+        <item name="3811">3811</item>
+        <item name="3888">3888</item>
+        <item name="6398">6398</item>
+        <item name="7560">7560</item>
+        <item name="8841">8841</item>
+        <item name="8900">8900</item>
+        <item name="9045">9045</item>
+        <item name="35">35</item>
+        <item name="4390">4390</item>
+        <item name="6482">6482</item>
+        <item name="5064">5064</item>
+        <item name="5687">5687</item>
+        <item name="5810">5810</item>
+        <item name="6108">6108</item>
+        <item name="2160">2160</item>
+        <item name="6633">6633</item>
+        <item name="8119">8119</item>
+        <item name="6342">6342</item>
+        <item name="3397">3397</item>
+        <item name="4930">4930</item>
+        <item name="5505">5505</item>
+        <item name="8402">8402</item>
+        <item name="64">64</item>
+        <item name="3624">3624</item>
+    </string-array>
+
+
+</resources>

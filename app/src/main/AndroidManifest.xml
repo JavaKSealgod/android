@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yu810.new_project">
+
+    <!-- 网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 选择照片所需权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 存取手機記憶卡的權限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 裝置不進入睡眠權限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_queen"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_queen"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name="com.example.new_project2.Slot_Image"></activity>
+        <activity android:name=".Lucky_Image" />
+        <activity android:name=".Spinner_bank" />
+        <activity
+            android:name=".WalletActivity"
+            android:screenOrientation="landscape" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".No_MainActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginInActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".exit_app"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Slot_game"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Card_game"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Fish_game"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Lucky_game"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Image"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Customer_service"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Account_manager"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Offer"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Setting"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Account_record"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".InCome"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Income_bank"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Money"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".AgreenMent"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".News"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GameActivity"
+            android:launchMode="singleTop"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".Num_Code"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Error_Login"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".No_Login"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>
