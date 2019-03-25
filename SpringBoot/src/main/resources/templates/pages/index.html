@@ -4,15 +4,19 @@
 <head>
 <meta charset="UTF-8"/>
 <title>springboot demo</title>
-
+<script th:inline="javascript">
+        /*<![CDATA[*/
+        var context = /*[[@{/}]]*/;
+        /*]]>*/
+</script>
  
-<link rel="stylesheet" type="text/css" th:href="@{/layui/css/layui.css}" />  
+<link rel="stylesheet" type="text/css" th:href="@{/layui/css/layui.css}" src="src/main/resources/static/layui/css/layui.css" />  
 <!--解决#{Action.add} 出现  ??Action.add_zh_CN?? 的问题 -->
 <!-- <link rel="stylesheet" type="text/css" media="all"  th:href="@{/css/gtvg.css}" /> -->
  
-<script type="text/javascript" th:src="@{/js/jquery-1.8.3.min.js}"></script> 
-<script type="text/javascript" th:src="@{/layui/layui.js}"></script>   
-<script type="text/javascript" th:src="@{/js/Page/index.js}"></script>  
+<script type="text/javascript" th:src="@{/js/jquery-1.8.3.min.js}" src="src/main/resources/static/js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" th:src="@{/layui/layui.js}"  src="src/main/resources/static//layui/layui.js"></script>   
+<script type="text/javascript" th:src="@{/js/Page/index.js}" src="src/main/resources/static/js/Page/index.js"></script>  
 
 </head>
 <body>  

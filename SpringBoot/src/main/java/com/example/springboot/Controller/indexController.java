@@ -129,6 +129,7 @@ public class indexController extends baseController {
 	//获取用户列表
 	@RequestMapping(value="/list",method={RequestMethod.GET,RequestMethod.POST})
 	public List<UserModel> listMap(@RequestParam Map<String, Object> param){
+		 System.out.println("list:----" ); 
 		String username = (String) param.get("username"); 
 		objUserModel = new UserModel();
 		objUserModel.setUSERNAME(username==""?"%":username+"%");

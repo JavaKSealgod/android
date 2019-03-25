@@ -1,7 +1,7 @@
 /**
  * 
  */
-var basePath="";
+var basePath=context;//解决springboot 发布后路径问题
 var action="butSearch";
 var username="#username";
 var listGrid="#listGrid";
@@ -44,13 +44,13 @@ var Pagajax = {
 
    ,GetURL:function(action){   
 		  if(action=="butSearch")//查询要返回list date
-			  ActionURL = basePath+"/pages/list";
+			  ActionURL = basePath+"pages/list";
 		  else if(action=="WebService")
-			  ActionURL = basePath+"/pages/webservice";
+			  ActionURL = basePath+"pages/webservice";
 		  else if(action=="butAdddate")
-			  ActionURL = basePath+"/pages/addUser";
+			  ActionURL = basePath+"pages/addUser";
 		  else if(action=="lang")
-			  ActionURL = basePath+"/pages/lang";
+			  ActionURL = basePath+"pages/lang";
 		  return ActionURL;
   }
 }
