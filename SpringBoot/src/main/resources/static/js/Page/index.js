@@ -4,12 +4,18 @@
 var basePath="";
 var action="butSearch";
 var username="#username";
+var listGrid="#listGrid";
 var ActionURL="";
 $(function(){ 
 	//button Click 公用，注册一次就可以了
 	$('.layui-btn').click(function(){ 
 		Pagajax.Post(this.id);
 	}); 
+	
+	//语系切换
+	$('#lang').change(function(){
+		Pagajax.Post(this.id);
+	});
 })
 
 
@@ -26,7 +32,9 @@ var Pagajax = {
           data: ParamsData,
           datadataType:'json',
           success: function (objList) { 
-        	  if(action=="WebService")
+        	  if(action=="lang")
+        		  location.reload();
+        	  else if(action=="WebService")
         		  alert(objList[0].username);
         	  else
         		  ReturnValue.Data(action,objList);
@@ -41,6 +49,8 @@ var Pagajax = {
 			  ActionURL = basePath+"/pages/webservice";
 		  else if(action=="butAdddate")
 			  ActionURL = basePath+"/pages/addUser";
+		  else if(action=="lang")
+			  ActionURL = basePath+"/pages/lang";
 		  return ActionURL;
   }
 }

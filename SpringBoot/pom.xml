@@ -97,6 +97,13 @@
 		 <artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
 
+		<!--引用GSON,用于打印-->
+		<dependency>
+		   <groupId>com.google.code.gson</groupId>
+		   <artifactId>gson</artifactId> 
+		</dependency>
+		
+		
 	</dependencies>
 
 	<build>

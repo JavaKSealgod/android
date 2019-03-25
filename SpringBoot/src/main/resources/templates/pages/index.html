@@ -1,40 +1,59 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+
+<html xmlns:th="http://www.thymeleaf.org"> 
 <head>
 <meta charset="UTF-8"/>
 <title>springboot demo</title>
 
+ 
 <link rel="stylesheet" type="text/css" th:href="@{/layui/css/layui.css}" />  
-
+<!--解决#{Action.add} 出现  ??Action.add_zh_CN?? 的问题 -->
+<!-- <link rel="stylesheet" type="text/css" media="all"  th:href="@{/css/gtvg.css}" /> -->
+ 
 <script type="text/javascript" th:src="@{/js/jquery-1.8.3.min.js}"></script> 
 <script type="text/javascript" th:src="@{/layui/layui.js}"></script>   
 <script type="text/javascript" th:src="@{/js/Page/index.js}"></script>  
 
 </head>
 <body>  
-	<h1>Wait Controller :<lable th:text="${Name}"/></h1> 
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+ <!--  <legend>表单集合演示</legend> -->
+  <h1><lable th:text="${titleController}"/> :<lable th:text="${Name}"/></h1> 
+</fieldset>
 	
-	<fieldset class="layui-elem-field site-demo-button" style="margin-top: 30px;">
-	  <legend>功能区域</legend>
-	  <div class="layui-form-item" >
-	    <label class="layui-form-label" style="width:200px; ">用户名称：</label>
-	    <div class="layui-input-inline">
-	      <input type="search" name="username" id="username"  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input" />
-	    </div>
-	  </div>
-	  <div> 
-	    <button class="layui-btn layui-btn-danger" id="WebService">Call WebService</button>  
-	    <button class="layui-btn" id="butAdddate">新增</button>
-	    <button class="layui-btn layui-btn-normal" id="butupdate">修改</button>
-	    <button class="layui-btn layui-btn-danger" id="butdelete">删除按钮</button>  
-	    <button class="layui-btn layui-btn-warm" id="butSearch">查询按钮</button>
-	  </div>
-	</fieldset>
-	
-	<div style="width: 99.8%" >
-	
-		<table id="listGrid" lay-filter="listGrid"></table>
-	
-	</div>
+	 
+		<fieldset class="layui-elem-field site-demo-button" style="margin-top: 30px;">
+		  <legend>功能区域</legend>
+		   <div  class="layui-form-item">
+		    <label class="layui-form-label" style="width:200px; ">语系：</label>
+		    <div class="layui-input-block">
+		      <!-- <select name="lang" id="lang" style="width:190px;height:40px;">
+		        <option value="zh_CN">中文</option>
+		        <option value="en_US">英文</option> 
+		      </select> -->
+		      <a href="#" class="layui-btn" onclick="Pagajax.Post('lang');" th:text="#{lang.zh}" ></a>
+		      <a href="#" class="layui-btn" onclick="Pagajax.Post('lang');" th:text="#{lang.en}" ></a>
+		    </div>
+		  </div>
+		  <div class="layui-form-item" >
+		    <label class="layui-form-label" style="width:200px; ">用户名称：</label>
+		    <div class="layui-input-inline">
+		      <input type="search" name="username" id="username"  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input" />
+		    </div>
+		  </div>
+		  <div> 
+		    <button class="layui-btn layui-btn-danger" id="WebService">Call WebService</button>  
+		    <button class="layui-btn" id="butAdddate"><p th:text="#{Action.add}"/>新增</button>
+		    <button class="layui-btn layui-btn-normal" id="butupdate" ><p th:text="#{Action.modify}"/>修改</button>
+		    <button class="layui-btn layui-btn-danger" id="butdelete" ><p th:text="#{Action.Delete}"/>删除按钮</button>  
+		    <button class="layui-btn layui-btn-warm" id="butSearch" ><p th:text="#{Action.Search}"/>查询按钮</button>
+		  </div>
+		</fieldset>
+		
+		<div style="width: 99.8%" >
+		
+			<table id="listGrid" lay-filter="listGrid"></table>
+		
+		</div> 
 </body>
 </html>

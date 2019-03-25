@@ -10,4 +10,5 @@ public interface iUserService {
 	
 	public int AddUserInfo(UserModel objUserModel);
 
+	
 }

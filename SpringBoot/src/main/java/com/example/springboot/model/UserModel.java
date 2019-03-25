@@ -6,6 +6,7 @@ public class UserModel extends BaseModel  implements Serializable {
 	private String USERID;
 	private String USERNAME;
 	private String PWD;
+	
 	public String getUSERID() {
 		return USERID;
 	}
